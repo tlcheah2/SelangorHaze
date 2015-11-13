@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SelangorHaze</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_view">Loading</string>
+</resources>
