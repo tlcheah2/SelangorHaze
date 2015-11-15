@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class HazeReading {
 
-    private int pagi;
+    private String pagi;
     private String last_updated;
     private String lokasi;
     private String negeri;
@@ -19,13 +19,23 @@ public class HazeReading {
     private String petang;
     private ArrayList<LatestReading> data;
     private LatestReading latest;
-    private int tengah_hari;
+    private String tengah_hari;
 
-    public int getPagi() {
+    public float getTempDistance() {
+        return tempDistance;
+    }
+
+    public void setTempDistance(float tempDistance) {
+        this.tempDistance = tempDistance;
+    }
+
+    private float tempDistance;
+
+    public String getPagi() {
         return pagi;
     }
 
-    public void setPagi(int pagi) {
+    public void setPagi(String pagi) {
         this.pagi = pagi;
     }
 
@@ -93,11 +103,11 @@ public class HazeReading {
         this.latest = latest;
     }
 
-    public int getTengah_hari() {
+    public String getTengah_hari() {
         return tengah_hari;
     }
 
-    public void setTengah_hari(int tengah_hari) {
+    public void setTengah_hari(String tengah_hari) {
         this.tengah_hari = tengah_hari;
     }
 

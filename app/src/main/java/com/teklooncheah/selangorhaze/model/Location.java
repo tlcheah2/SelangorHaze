@@ -8,6 +8,8 @@ public class Location {
     private String area;
     private String state;
 
+    private Coordinates coordinates;
+
     public String getArea() {
         return area;
     }
@@ -22,5 +24,13 @@ public class Location {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
     }
 }

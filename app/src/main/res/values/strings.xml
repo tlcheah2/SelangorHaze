@@ -2,4 +2,12 @@
     <string name="app_name">SelangorHaze</string>
     <string name="action_settings">Settings</string>
     <string name="empty_view">Loading</string>
+    <string name="DeviceNotSupported">Device Not Supported Google Maps</string>
+    <string name="YouAreHere">You are here</string>
+    <string name="Alert">Alert</string>
+    <string name="LocationNotFound">Location Not Found</string>
+    <string name="Ok">Ok</string>
+    <string name="loading">Loading...</string>
+
+
 </resources>

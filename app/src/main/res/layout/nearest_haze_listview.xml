@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:layout_height="match_parent" android:layout_marginTop="5dp">
+    android:layout_height="match_parent">
 
     <TextView
+        android:layout_margin="10dp"
         android:id="@+id/index"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
@@ -22,7 +23,7 @@
 
     <TextView
         android:layout_toRightOf="@+id/index"
-        android:id="@+id/state"
+        android:id="@+id/distance"
         android:layout_alignLeft="@+id/location"
         android:layout_below="@+id/location"
         android:layout_width="wrap_content"
