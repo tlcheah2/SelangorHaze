@@ -7,14 +7,14 @@ import com.google.gson.Gson;
  */
 public class LatestReading {
 
-    private int index;
+    private String index;
     private String time;
 
-    public int getIndex() {
+    public String getIndex() {
         return index;
     }
 
-    public void setIndex(int index) {
+    public void setIndex(String index) {
         this.index = index;
     }
 

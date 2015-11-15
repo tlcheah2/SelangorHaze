@@ -11,6 +11,8 @@ import com.teklooncheah.selangorhaze.event.OnGetHazeDataEvent;
 import com.teklooncheah.selangorhaze.model.HazeReading;
 
 import org.apache.http.HttpStatus;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -52,11 +54,14 @@ public class GetHazeDataJob extends Job {
                 .get();
 
         String json = response.getResult();
+        JSONObject jsonObject = new JSONObject(json);
+        JSONArray result =jsonObject.getJSONArray("result");
+        Log.d("tekloon", "result is " + result.toString());
 
         if(response.getHeaders().code()!= HttpStatus.SC_OK){
             Log.d("tekloon","Get Data Failed");
         }
-        EventBus.getDefault().post(new OnGetHazeDataEvent(HazeReading.deserializeList(json)));
+        EventBus.getDefault().post(new OnGetHazeDataEvent(HazeReading.deserializeList(result.toString())));
 
     }
 

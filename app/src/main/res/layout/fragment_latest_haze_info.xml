@@ -3,12 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/listContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="gone">
+    <!--<-->
+        <!--android:id="@+id/listContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
 
         <com.teklooncheah.selangorhaze.widget.EmptyView
             android:id="@+id/empty"
@@ -34,7 +34,6 @@
                 android:scrollbars="none" />
         </android.support.v4.widget.SwipeRefreshLayout>
 
-    </FrameLayout>
 
     <!--<include layout="@layout/view_progress_container" />-->
 <!---->

@@ -28,6 +28,9 @@ dependencies {
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.koushikdutta.ion:ion:2.+'
     compile 'com.path:android-priority-jobqueue:1.1.2'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.google.android.gms:play-services-nearby:8.3.0'
 
 
 }
